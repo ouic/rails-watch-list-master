@@ -1,6 +1,6 @@
-# puts "Cleaning up database..."
-# Movie.destroy_all
-# puts "Database cleaned"
+puts "Cleaning up database..."
+Movie.destroy_all
+puts "Database cleaned"
 
 
 # ____________________________________________________________

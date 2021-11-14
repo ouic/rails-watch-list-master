@@ -54,7 +54,7 @@
     </div>
     <div class="col-12 col-sm-6">
       <div class="bg-white rounded p-3">
-        <h5>ajouter vitre avis</h5>
+        <h5>ajouter votre avis</h5>
         <%= simple_form_for [@list, @review] do |f| %>
           <%= f.input :comment, label: 'Commentaire', placeholder: 'Ajouter votre avis ici ...' %>
           <%= f.input :rating, label: 'Note', as: :select, collection: (1..5), required: true, prompt: "Quelle est votre note ?", input_html: { id: 'review_rating' } %>

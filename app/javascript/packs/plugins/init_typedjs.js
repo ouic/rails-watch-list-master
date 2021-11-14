@@ -4,7 +4,7 @@ const initTyped = () => {
   const element = document.querySelector('.typed-js');
   if (element) {
     new Typed('.typed-js', {
-      strings: ['Drama', 'Classic', 'Comedy', 'Action', 'Romantic', 'Thriller', 'Horror', 'Slasher'],
+      strings: ['Drame', 'Classique', 'Comédie', 'Action', 'Romantique', 'Thriller', 'Horreur', 'Policier'],
       typeSpeed: 40,
       loop: true,
       loopCount: Infinity,

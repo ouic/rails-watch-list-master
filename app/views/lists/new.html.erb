@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col-12 col-md-6 offset-lg-3">
       <div class="bg-white rounded p-3 shadow">
-        <h3>Create a new list</h3>
+        <h3>Créer une nouvelle liste</h3>
         <%= simple_form_for @list do |f| %>
-          <%= f.input :name, placeholder: 'Drama' %>
+          <%= f.input :name, label: 'Nom ou genre', placeholder: 'Science-Fiction' %>
           <%= f.input :photo %>
-          <%= f.submit class: 'btn btn-flat' %>
+          <%= f.submit 'valider',  class: 'btn btn-flat' %>
         <% end %>
       </div>
     </div>

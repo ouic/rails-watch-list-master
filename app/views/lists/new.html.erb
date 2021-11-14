@@ -5,7 +5,7 @@
         <h3>Créer une nouvelle liste</h3>
         <%= simple_form_for @list do |f| %>
           <%= f.input :name, label: 'Nom ou genre', placeholder: 'Science-Fiction' %>
-          <%= f.input :photo %>
+          <%= f.input :photo, as: :file %>
           <%= f.submit 'valider',  class: 'btn btn-flat' %>
         <% end %>
       </div>

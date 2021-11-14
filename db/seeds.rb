@@ -1,12 +1,13 @@
+# puts "Cleaning up database..."
+# Movie.destroy_all
+# puts "Database cleaned"
+
+
 # ____________________________________________________________
 # meilleurs films de l’API Le Wagon
 
 require 'open-uri'
 require 'json'
-
-puts "Cleaning up database..."
-Movie.destroy_all
-puts "Database cleaned"
 
 url = "http://tmdb.lewagon.com/movie/top_rated"
 10.times do |i|
@@ -35,9 +36,7 @@ puts "Movies created"
 # # https://api.themoviedb.org/3/movie/550?api_key=b8a9f948f664eafd1b267b52c2485662
 # url = 'http://tmdb.lewagon.com/movie/top_rated?&language=fr-FR'
 
-
 # movies = JSON.parse(URI.open(url).read)
-
 
 # movies["results"].each do |movie|
 #   Movie.create(title: movie["title"], overview: movie["overview"], rating: movie["vote_average"],
